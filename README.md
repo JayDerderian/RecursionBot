@@ -3,8 +3,10 @@ A little twitter bot that quote-tweets itself once every 2 hours.
 
 # To Use
 Set up your preferred development environment with Python 3
+
 Install tweepy with:
-  pip install tweepy
+
+`pip install tweepy`
 
 (Will add more later)
 
