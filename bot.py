@@ -1,20 +1,19 @@
-#Description:
-#This bot will quote tweet itself once every 2 hours until the end of time
-#or until Twitter shuts down, whichever comes first. 
-
 import tweepy
 import time
+import sys
+import os
 from keys import keys
 
 #--------------------Twitter credentials---------------------#
-consumer_key = keys['CONSUMER_KEY']
-consumer_secret = keys['CONSUMER_SECRET']
-access_key = keys['ACCESS_KEY']
-access_secret = keys['ACCESS_SECRET']
+from os import environ
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
 #---------------------Connect to Twitter---------------------#
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_key, access_secret)
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 #----------------------Generate Tweets-----------------------#
@@ -37,7 +36,7 @@ def createTweet():
     return tweet
 
 #------------------------Post Timer-------------------------#
-interval = 60 * 60 * 2
+interval = 60 * 60
 while True:
     print("Generating tweet...")
     newTweet = createTweet()
