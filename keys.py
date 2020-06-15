@@ -1,6 +1,7 @@
 keys = dict(
-    CONSUMER_KEY =    'OZSBNT10QTH5PACHAzweeHKC3',
-    CONSUMER_SECRET=  'zBrCfTONvsCDDHUCUMXonJEJGEE9NcZT0W23MydShqpDbOmBW3',
-    ACCESS_KEY=       '1271534687257718784-Iutcux1MXO6suOlFJa7zYdbjiKApEM',
-    ACCESS_SECRET=    'OTeueGTDPJ7yJOJ2Iz4gZKQuGkKvXS2bsLcuXcGcfjHak',
+    #Fill in as needed
+    CONSUMER_KEY =    'API Key',
+    CONSUMER_SECRET=  'API Secret Key',
+    ACCESS_KEY=       'Access Token',
+    ACCESS_SECRET=    'Access Token Secret',
 )
