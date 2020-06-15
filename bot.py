@@ -5,7 +5,6 @@
 import tweepy
 import time
 from keys import keys
-from os import environ
 
 #--------------------Twitter credentials---------------------#
 consumer_key = keys['CONSUMER_KEY']
