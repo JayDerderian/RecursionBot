@@ -5,6 +5,7 @@ import os
 from keys import keys
 
 #--------------------Twitter credentials---------------------#
+#Update these values on the Heroku dashboard.
 from os import environ
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
