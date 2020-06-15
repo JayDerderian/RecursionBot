@@ -2,7 +2,6 @@ import tweepy
 import time
 import sys
 import os
-from keys import keys
 
 #--------------------Twitter credentials---------------------#
 #Update these values on the Heroku dashboard.
