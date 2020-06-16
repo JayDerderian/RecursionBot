@@ -4,8 +4,9 @@ import sys
 import os
 
 #--------------------Twitter credentials---------------------#
-#Update these values on the Heroku dashboard.
 from os import environ
+
+#Fill in on Heroku dashboard
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
@@ -22,17 +23,19 @@ num = 1
 def createTweet():
     global lastTweet
     global num
+
     #Get most recent tweet ID
     for status in api.user_timeline('RecursionBot', count = 1):
         tweetID = status.id
+
     #Attach ID to template URL
     blankURL = 'https://twitter.com/RecursionBot/status/'
     mostRecentTweet = "{}{}".format(blankURL, tweetID)
+
     #Generate new tweet
-    if mostRecentTweet != lastTweet:
-        tweet = "Level: {} \n {}".format(num, mostRecentTweet)
-        num += 1
-    lastTweet = mostRecentTweet
+    tweet = "Level: {} \n {}".format(num, mostRecentTweet)
+    num += 1
+   
     return tweet
 
 #------------------------Post Timer-------------------------#
