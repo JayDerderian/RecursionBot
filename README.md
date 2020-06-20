@@ -1,5 +1,5 @@
 # RecursionBot
-A little twitter bot that quote-tweets itself once every 2 hours. 
+A little twitter bot that quote-tweets itself once every 15 minutes. 
 
 # To Use
 Set up your preferred development environment with Python 3
@@ -8,7 +8,7 @@ Install tweepy with:
 
 `pip install tweepy`
 
-(Will add more later)
+(More to come..)
 
 # The Bot
 [Recursion Bot](https://twitter.com/RecursionBot) is being deployed with **Heroku**, though I hope to 
