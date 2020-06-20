@@ -2,10 +2,8 @@
 #This bot will quote tweet itself once every 15 minutes until the end of time
 #or until Twitter shuts down, whichever comes first. 
 
-import requests
 import tweepy
 import time
-import sys
 import os
 from os import environ
 
